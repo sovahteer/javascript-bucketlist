@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Bucket List</title>
+    <script src="/js/bundle.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Cinzel|EB+Garamond" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
+  </head>
+  <body>
+    <h1>My Bucket List</h1>
+    <div class="wrapper">
+      <div>
+        <h2>Add an item</h2>
+        <form id="bucket-list-form">
+
+            <div>
+                <label for="rank">Rank:</label>
+                <select id="optionRank">
+                  <option selected disabled >Please choose</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="activity">Activity:</label>
+                <input type="text" id="activity"/>
+            </div>
+
+          <div>
+            <label for="location">Location:</label>
+            <input type="text" id="location"/>
+          </div>
+
+          <div>
+                <label for="category">Category:</label>
+                <select id="category">
+                  <option selected disabled></option>
+                  <option value="categories">Physical</option>
+                  <option value="categories">Adventure</option>
+                  <option value="categories">Spiritual</option>
+                  <option value="categories">Shits and Giggles</option>
+                </select>
+            </div>
+
+          <input type="submit" value="Save" id="save"/>
+        </form>
+      </div>
+      <div>
+        <h2>Bucket List Items</h2>
+        <div id="items"></div>
+      </div>
+    </div>
+  </body>
+</html>
